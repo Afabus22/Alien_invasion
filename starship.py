@@ -12,3 +12,8 @@ class Starship():
     def blitme(self):
         """Рисует корабль в текущей позиции."""
         self.screen.blit(self.image, self.rect)
+    def check_events():
+        """Обрабатывает нажатия клавиш и события мыши."""
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
