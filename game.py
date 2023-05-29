@@ -17,6 +17,7 @@ def run_game():
     as1 = Asteroid(screen=screen)
     while True:
         gf.check_events(star_Destroyer)
+        Starship.update()
         star_Destroyer.blitme()
         as1.blitme()
         pygame.display.flip()
